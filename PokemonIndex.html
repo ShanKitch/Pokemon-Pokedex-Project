@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pokemon</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href='https://fonts.googleapis.com/css?family=Staatliches' rel='stylesheet'>
+        <style type="text/css">
+        body{
+            background: linear-gradient(rgb(255, 102, 102),rgb(255, 51, 51),red);
+
+        }
+        h1, h2{
+            font-family: 'Staatliches';
+            text-align:center;
+            color:white;   
+        }
+       h1{
+           font-size:80pt;
+           text-align: center;
+           font-weight:bold;
+           margin-top: 25px;
+           margin-bottom: 15px;
+       }
+       h2{
+        font-size: 60pt;
+        margin-top: -35px;
+        margin-top: -20px;
+        margin-bottom: 25px;
+       }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready (function(){
+                for(var i=1;i<152;i++){
+                    $('.pokemons').append("<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+i+".png'>");
+                }
+            });
+        </script>
+    </head>
+     <body>
+        <h1>Pokemon! An API Demo Experience.</h1>
+        <h2>Behold the Pokemon:</h2>
+        <div class="pokemons"></div>
+     </body>
+     </html>
